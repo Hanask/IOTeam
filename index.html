@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Web Game</title>
+    <link rel="stylesheet" type="text/css" href="game.css" media="all" /> <!-- linking the css file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/game.js"></script>  <!-- linking the javascript file-->
+    <noscript> <!-- incase the javascript file doesn't work , a message is displayed acc to the error-->
+      Warning - Javascript is Disabled. For full functionality of the page, it
+      is necessary to enable Javascript.
+    </noscript>
+    </head>
+    <body>
+        <div id="bg-1">  <!-- the div element which consists of the game board and the bear and bee which is linked.-->
+        </div>
+        <div id = "title">
+            <img src = "images/title.png" id="title" alt="title"/> 
+        </div>
+        <div id = "tigershead">
+            <img src="images/tiger_2.png" id="head" alt="tigerhead" width="150px" height="150px"/>
+        </div>
+        <div id = "squarespee">
+            <img src="images/speech.png" id = "speech" alt = "speech" width="400px" height="400px"/>
+            <p id = "text">
+                Milo and me were playing and he was taken by the big bad human being. Help me save him!
+            </p>
+        </div>
+        <button class = "playbttn">Play</button>
+    </body>
+</html>
