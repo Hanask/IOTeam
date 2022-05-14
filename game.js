@@ -190,7 +190,7 @@ function check(answer) {
         }
         else {
             choices.style.display = "none";
-            choiceResponse.innerHTML= "<p>Inorrect!</p>"
+            choiceResponse.innerHTML= "<p>Incorrect!</p>"
             choiceResponse.style.display = "block";
             setTimeout(showScore,2000);
         }

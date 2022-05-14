@@ -31,10 +31,13 @@ h1 {
 
 
 .start-btn {
-    background-color: #14532d; /* Green */
+    background-color: #421d1d; /* Green */
     color: #ffffff;
     font-size: 20px;
-    margin-top: 350px;
+    margin-top: 300px;
+    width: 300px;
+    font-family: "Arial";
+    font-size: 28px;
 }
 
 
@@ -73,18 +76,41 @@ button:focus {
 }
 
 #quizQuestion{
-    padding-top: 150px;
+    padding-top: 60px;
+    font-size: 30px;
 }
 
 #choiceA,#choiceB,#choiceC,#choiceD{
-    background-color: #14532d; /* Green */
-    color: #ffffff;
+    background-color: #e3f2b6; /* Green */
+    color: #421d1d;
+    font-size: 20px;
+    width: 305px;
+    margin-top: 50px;
+}
+#choiceResponse{
+    font-size: 40px;
+}
+#scoreBlock{
+    font-size: 40px;
+}
+#scoreMessage{
+    font-size: 40px;
 }
 
-.quizRestart {
+/* .quizRestart {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 35px;
+} */
+
+#quizAgain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    background-color: #14532d;
+    color: #ffffff;
 }
 
 /*Media queries------------------------------*/
@@ -98,7 +124,7 @@ button:focus {
 
 @media (min-width: 1024px){
     button:hover{
-    background-color: yellow;
+    background-color:#e3f2b6;
     border: none;
 }
-}    
+}   
