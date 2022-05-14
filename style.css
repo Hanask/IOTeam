@@ -26,6 +26,17 @@ h1 {
     margin-top: 150px;
 }
 
+.hello{
+    position: absolute;
+    left: 400px;
+    top: 225px;
+    color: #421d1d;
+    font-family: "Goudy Bookletter 1911";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
 button {
     width: 250px;
     height: 60px;
