@@ -153,7 +153,7 @@ function showScore() {
     }
  
     else {
-        scoreMessage.innerHTML = "<p>Great work! You rsaved Milo!!</p>"
+        scoreMessage.innerHTML = "<p>Great work! You saved Milo!!</p>"
     }
     scoreMessage.style.display = "block";
     quizAgain.style.display = "block";
