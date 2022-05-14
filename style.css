@@ -76,6 +76,10 @@ button:focus {
     padding-top: 150px;
 }
 
+#choiceA,#choiceB,#choiceC,#choiceD{
+    background-color: #14532d; /* Green */
+    color: #ffffff;
+}
 
 .quizRestart {
     display: block;

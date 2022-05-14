@@ -146,7 +146,7 @@ function beginQuiz() {
 function showScore() {
     quiz.style.display = "none";
     scoreBlock.style.display = "block";
-    scoreBlock.innerHTML = "<p> You scored " + score + " out of 15!</p>";
+    scoreBlock.innerHTML = "<p> You scored " + score + " out of 14!</p>";
 
     if (score < 10) {
         scoreMessage.innerHTML = "<p>Oh no! You failed to save Milo </p>";
