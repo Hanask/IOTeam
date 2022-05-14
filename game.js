@@ -2,7 +2,6 @@
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var quizQuestion = document.getElementById("quizQuestion");
-var quizImg = document.getElementById("quizImg");
 var optionA = document.getElementById("choiceA");
 var optionB = document.getElementById("choiceB");
 var optionC = document.getElementById("choiceC");
@@ -15,87 +14,104 @@ var choiceResponse = document.getElementById("choiceResponse");
 var score = 0;
 
 //questions function so our getQuestion function later can get the right value from array
-
 let questions = [{
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/bellbird.jpg",
-    choiceA: "New Zealand Falcon/Kārearea",
-    choiceB: "Bellbird/Korimako",
-    choiceC: "Rock Wren/Tuke",
-    choiceD: "Fernbird/Mātātā",
-    correctAnswer: "B"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/fantail.jpg",
-    choiceA: "Grey Warbler/Riroriro",
-    choiceB: "Marsh Crake/Koitareke",
-    choiceC: "Fantail/Pīwakawaka",
-    choiceD: "Saddleback/Tīeke",
-    correctAnswer: "C"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/morepork.jpg",
-    choiceA: "Morepork/Ruru",
-    choiceB: "Takahē",
-    choiceC: "Wax-eye",
-    choiceD: "New Zealand Parakeet/Kākāriki",
-    correctAnswer: "A"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/tui.jpg",
-    choiceA: "Tūī",
-    choiceB: "Whitehead/Pōpokotea",
-    choiceC: "Wrybill/Ngutu pare",
-    choiceD: "Weka",
-    correctAnswer: "A"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/dotterel.jpg",
-    choiceA: "Westland Petrel/Tāiko",
-    choiceB: "Variable Oystercatcher/Tōrea",
-    choiceC: "Subantarctic Teal",
-    choiceD: "New Zealand Dotterel/Tūturiwhatu",
+    question: "A species is defined as endangered when it",
+    choiceA: "suffers from damage to its habitat",
+    choiceB: "suffers from disease or predation",
+    choiceC: "when there are hazards to the continued life of the species",
+    choiceD: "all of the above",
     correctAnswer: "D"
 }, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kakapo.jpg",
-    choiceA: "Kākā",
-    choiceB: "Kea",
-    choiceC: "Kākāpō",
-    choiceD: "Kōkako",
-    correctAnswer: "C"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kotuku.jpg",
-    choiceA: "New Zealand Fairy Tern/Tara iti",
-    choiceB: "White Heron/Kōtuku",
-    choiceC: "Shore Plover/Tūturuatu",
-    choiceD: "Spotted Shag/Parekareka",
-    correctAnswer: "B"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kea.jpg",
-    choiceA: "New Zealand Robin/Toutouwai",
-    choiceB: "Paradise Duck / Pūtakitaki",
-    choiceC: "Pūkeko",
-    choiceD: "Kea",
-    correctAnswer: "D"
-}, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kaka.jpg",
-    choiceA: "Kākā",
-    choiceB: "Tomtit/Miromiro",
-    choiceC: "Yellowhead/Mohua",
-    choiceD: "Fiordland Crested Penguin/Tawaki",
+    question: "One of the most endangered habitats in the world, as a result of human development, pollution and climate change is",
+    choiceA: "Freshwater systems",
+    choiceB: "desert ecosystems",
+    choiceC: "marine ecosystems",
+    choiceD: "none of the above",
     correctAnswer: "A"
 }, {
-    question: "Which bird is this?",
-    imgSrc: "assets/birds/kereru.jpg",
-    choiceA: "Kiwi",
-    choiceB: "New Zealand Pigeon/Kererū",
-    choiceC: "Kingfisher/Kōtare",
-    choiceD: "Eastern Bar-Tailed Godwit/Kuaka",
+    question: "Which is the symbol of the World Wildlife Fund?",
+    choiceA: "Giant Panda",
+    choiceB: "Dolphin",
+    choiceC: "Blue Whale",
+    choiceD: "Tiger",
+    correctAnswer: "A"
+}, {
+    question: "What is the main cause of extinction of tigers?",
+    choiceA: "hunting",
+    choiceB: "climate change",
+    choiceC: "disease",
+    choiceD: "building of new homes",
+    correctAnswer: "A"
+}, {
+    question: "Which poses the greatest threat to polar bears today?",
+    choiceA: "wildlife hunting",
+    choiceB: "climate change",
+    choiceC: "water pollution",
+    choiceD: "deforestation",
     correctAnswer: "B"
+}, {
+    question: "What can you do to help protect coral reefs?",
+    choiceA: "Buy and use oxybenzone and octinoxate-free sunscreen",
+    choiceB: "Avoid purchasing cora",
+    choiceC: "Choose seafood that has been sustainably sourced",
+    choiceD: "All of the above",
+    correctAnswer: "D"
+}, {
+    question: "Poaching is a severe threat to elephants. How many elephants are killed for their tusks?",
+    choiceA: "50 per day",
+    choiceB: "175 per day",
+    choiceC: "100 per day",
+    choiceD: "15 per day",
+    correctAnswer: "C"
+}, {
+    question: "The first endangered species list had many more _______ than any other kind of animal.",
+    choiceA: "plants",
+    choiceB: "fish",
+    choiceC: "birds",
+    choiceD: "mammals",
+    correctAnswer: "C"
+}, {
+    question: "When a species is delisted because its numbers increase the species is considered:",
+    choiceA: "recovered",
+    choiceB: "increased",
+    choiceC: "saved",
+    choiceD: "unextinct",
+    correctAnswer: "A"
+}, {
+    question: "China's endangered giant pandas subsist almost entirely on what food?",
+    choiceA: "None of the below",
+    choiceB: "Bamboo",
+    choiceC: "Hazelnuts",
+    choiceD: "Eucalyptus",
+    correctAnswer: "B"
+}, {
+    question: "What was the last feline species to go extinct?",
+    choiceA: "Saber-toothed cat",
+    choiceB: "Florida panther",
+    choiceC: "Snow leopard",
+    choiceD: "Liberian lynx",
+    correctAnswer: "A"
+}, {
+    question: "What has killed off tens of thousands of amphibians in the last few decades?",
+    choiceA: "Hurricanes",
+    choiceB: "Bats",
+    choiceC: "Melting ice",
+    choiceD: "A fungus",
+    correctAnswer: "D"
+}, {
+    question: "Elephants are now better protected from the ivory trade, but poachers have turned their attention to another animal, now at risk from extinction. Which is it?",
+    choiceA: "Hippo",
+    choiceB: "Mammot",
+    choiceC: "Walrus",
+    choiceD: "Narwhal",
+    correctAnswer: "A"
+}, {
+    question: "Which popular fruit is under threat of extinction from a fungus?",
+    choiceA: "Apple",
+    choiceB: "Banana",
+    choiceC: "Strawberry",
+    choiceD: "Orange",
+    correctAnswer: "B"    
 }, ];
 
 
@@ -109,7 +125,6 @@ function getQuestion() {
     choiceResponse.style.display = "none";
     let q = questions[questionIndex];
     quizQuestion.innerHTML = "<p>Question " +(questionIndex+1) + ": " + q.question + "</p>";
-    quizImg.innerHTML = "<img src=" + q.imgSrc + ">";
     optionA.innerHTML = q.choiceA;
     optionB.innerHTML = q.choiceB;
     optionC.innerHTML = q.choiceC;
