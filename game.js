@@ -146,16 +146,14 @@ function beginQuiz() {
 function showScore() {
     quiz.style.display = "none";
     scoreBlock.style.display = "block";
-    scoreBlock.innerHTML = "<p> You scored " + score + " out of 10!</p>";
+    scoreBlock.innerHTML = "<p> You scored " + score + " out of 15!</p>";
 
-    if (score < 4) {
-        scoreMessage.innerHTML = "<p>Not so good! Time for some revision.</p>";
+    if (score < 10) {
+        scoreMessage.innerHTML = "<p>Oh no! You failed to save Milo </p>";
     }
-    else if (score < 8) {
-        scoreMessage.innerHTML = "<p>Pretty good! But still room for improvement.</p>"
-    }
+ 
     else {
-        scoreMessage.innerHTML = "<p>Great work! You really know your birds!</p>"
+        scoreMessage.innerHTML = "<p>Great work! You rsaved Milo!!</p>"
     }
     scoreMessage.style.display = "block";
     quizAgain.style.display = "block";

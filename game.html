@@ -11,10 +11,11 @@
 <body>
     
     <div class="container">
-        <div id="start"><h1>Instructions</h1>
+        <div id="start">
+            <h1 id="heading">Instructions</h1>
             <p class="hello">
                 1. Answer the questions to move<br>
-                2. If you answer right, you move one step forward<br>
+                2. If you answer right, you move one sytep forward<br>
                 3. If you answer wrong, you stay where you are.<br>
                 4. Get 10 questions correct to save Milo.<br>
                 5. Good Luck!<br></p>
@@ -31,7 +32,8 @@
         </div>
         <div id="scoreBlock" style="display: none"></div>
         <div id="scoreMessage" style="display: none"></div>
-        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
+        <div>
+            <a href="info.html"><button id="quizAgain" class="quizRestart" style="display: none" class="playbttn">Continue</button></a></div>
     </div>
     <script src="game.js"></script>
 </body>

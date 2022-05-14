@@ -1,19 +1,27 @@
 
-body {
-    background-color: #578c49;
+body {   
+    background-size: cover;
+    background:  url('images/bg2.PNG')  no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
     font-family: "Roboto", sans-serif;
     color: #000;
 }
 
 h1 {
     text-align: center;
-}
+    margin-top: 150px;
+    color: #421d1d;
+    font-size: 55px;}
+
 
 .container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #99be8f;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -21,13 +29,18 @@ h1 {
     border-radius: 23px;
 }
 
+
 .start-btn {
+    background-color: #14532d; /* Green */
+    color: #ffffff;
     font-size: 20px;
-    margin-top: 150px;
+    margin-top: 350px;
 }
+
 
 .hello{
     position: absolute;
+    text-align: left;
     left: 400px;
     top: 225px;
     color: #421d1d;
@@ -58,6 +71,11 @@ button:focus {
 #quiz{
     overflow:hidden;
 }
+
+#quizQuestion{
+    padding-top: 150px;
+}
+
 
 .quizRestart {
     display: block;

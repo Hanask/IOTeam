@@ -9,6 +9,18 @@
     background-size: cover;
     height:100%;
 }
+.container2 {
+    background-color: #e3f2b6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 23px;
+}
+
 
 #squarespee {
     position: absolute;
