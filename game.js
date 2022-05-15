@@ -1,4 +1,3 @@
-//declare all variables
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var quizQuestion = document.getElementById("quizQuestion");
@@ -13,7 +12,6 @@ var choices = document.getElementById("choices");
 var choiceResponse = document.getElementById("choiceResponse");
 var score = 0;
 
-//questions function so our getQuestion function later can get the right value from array
 let questions = [{
     question: "A species is defined as endangered when it",
     choiceA: "suffers from damage to its habitat",
@@ -118,8 +116,6 @@ let questions = [{
 var questionIndex = 0;
 
 
-// getQuestion function
-
 function getQuestion() {
 
     choiceResponse.style.display = "none";
@@ -133,7 +129,7 @@ function getQuestion() {
 }
 
 
-// start quiz
+// start the game
 
 function beginQuiz() {
     start.style.display ="none";
@@ -141,7 +137,7 @@ function beginQuiz() {
     quiz.style.display = "block";
 }
 
-// show score function
+// show all the scores function
 
 function showScore() {
     quiz.style.display = "none";
@@ -159,8 +155,7 @@ function showScore() {
     quizAgain.style.display = "block";
 }
 
-
-//function to check if answer is correct
+// checking if user input is correct
 
 function check(answer) {
     if (questionIndex < questions.length - 1) {
